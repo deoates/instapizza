@@ -37,7 +37,23 @@
   </head>
   <body>
 
-    Hello, world. Download instapizza: <a href="https://itunes.apple.com/us/app/instapizza/id719883571">here</a>.
+    <div class="container">
+      <div class="left">
+        <img src="img/iphone@2x.png" width="297px" height="631px">
+      </div>
+      <div class="right">
+        <img src="img/logo@2x.png" width="193px" height="47px">
+        <form id="download">
+          <p>We'll text a download link to your phone</p>
+          <input type="text" placeholder="(617) 123-4567"></input><br>
+          <input type="submit" value="Text me!"></input>
+        </form>
+        <div class="success" style="display: none">
+          <p>Your link is on it's way. Thanks for trying Instapizza!</p>
+        </div>
+      </div>
+    </div><!-- container -->
+
 
     <script type="text/javascript">
       mixpanel.track("Viewed landing page");
