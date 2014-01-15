@@ -365,7 +365,7 @@ div.container {
 }
 
 .right {
-  width: auto;
+  width: 400px;
   float: left;
   padding: 220px 0px 0px 50px;
 }
