@@ -9,6 +9,7 @@ $ ->
     if phone.length is 10
       $.ajax
         url: "https://zapier.com/hooks/catch/n/mcsn3/?to=#{phone}"
+        type: "POST"
         crossDomain: true
 
       setTimeout =>
