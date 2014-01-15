@@ -1,13 +1,59 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Instapizza</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Get Instapizza for iPhone</title>
+
+    <!-- TODO: FB og tags -->
+
+    <meta name="description" content="The Uber for Pizza: Get a pizza delivered to your door in one tap with Instapizza">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script type="text/javascript">
+
+      // redirect if viewed from iPhone
       if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
         window.location.href = "https://itunes.apple.com/us/app/instapizza/id719883571";
       }
+
     </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+
+      // mixpanel init
+      (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+      typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+      b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+      mixpanel.init("556642d019aed64b7c492e0df1e64947");
+
+    </script>
+
   </head>
   <body>
+
     Hello, world. Download instapizza: <a href="https://itunes.apple.com/us/app/instapizza/id719883571">here</a>.
+
+    <script type="text/javascript">
+      mixpanel.track("Viewed landing page");
+    </script>
+
+    <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47171700-1', 'instapizza.biz');
+      ga('send', 'pageview');
+
+    </script>
+
   </body>
 </html>
