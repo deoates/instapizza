@@ -337,3 +337,15 @@ body {
   background-image: -o-linear-gradient(top, #ff611e 0%, #ff431b 100%);
   background-image: linear-gradient(top, #ff611e 0%, #ff431b 100%);
 }
+
+@font-face {
+  font-family: "proxima";
+  src: url("fonts/proximanova-semibold-webfont-webfont.eot");
+  src: url("fonts/proximanova-semibold-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-semibold-webfont-webfont.woff") format("woff"), url("fonts/proximanova-semibold-webfont-webfont.ttf") format("truetype"), url("fonts/proximanova-semibold-webfont-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "proxima";
+}
